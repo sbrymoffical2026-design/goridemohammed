@@ -1,0 +1,236 @@
+
+
+   
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Clearfix for float layout */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+.navbar {
+    background-color: #1F2937;
+    padding: 15px 0;
+}
+
+.navbar .logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    float: left;
+}
+
+.navbar .nav-links {
+    float: right;
+    list-style: none;
+}
+
+.navbar .nav-links li {
+    display: inline-block;
+}
+
+.navbar .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #1677FF;
+}
+
+
+.hero {
+    background: linear-gradient(135deg, #1f2937, #374151);
+    padding: 60px 0;
+    color: #ffffff;
+}
+
+.hero-text {
+    float: left;
+    width: 50%;
+    padding-right: 20px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.hero-image {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Book a Ride Button */
+.btn-primary {
+    background-color: #1677FF;
+    color: #ffffff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0d52b5;
+}
+
+
+.services {
+    padding: 50px 0;
+    background-color: #f9fafb;
+}
+
+.services-heading {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #1F2937;
+}
+
+.service-card {
+    float: left;
+    width: 31.33%;
+    margin: 1%;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-card h3 {
+    color: #1677FF;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #4b5563;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+
+.btn-card {
+    display: inline-block;
+    background-color: #1F2937;
+    color: #ffffff;
+    padding: 8px 18px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-card:hover {
+    background-color: #1677FF;
+}
+
+
+.footer {
+    background-color: #1F2937;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer-tagline {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #1677FF;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #9ca3af;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar .logo,
+    .navbar .nav-links {
+        float: none;
+        text-align: center;
+    }
+
+    .navbar .nav-links {
+        margin-top: 10px;
+    }
+
+    .hero-text,
+    .hero-image {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-text {
+        margin-bottom: 25px;
+        padding-right: 0;
+    }
+
+    .hero-image img {
+        width: 100%;
+    }
+
+    .service-card {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+}
